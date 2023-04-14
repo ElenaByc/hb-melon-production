@@ -36,3 +36,10 @@ class Squash(Melon):
     """Winter squash."""
 
     # FIX ME: Add Squash class definition here.
+    def prep(self):
+        """Prepare the squash."""
+
+        robots.cleanerbot.clean(self)
+        robots.painterbot.paint(self)
+        robots.stickerbot.apply_logo(self)
+        
